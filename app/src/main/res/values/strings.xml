@@ -10,6 +10,9 @@
     <string name="inc">+</string>
     <string name="dec">-</string>
     <string name="zero">0</string>
+    <string name="details">Additional Details</string>
+    <string name="desc">Enter Description</string>
+    <string name="Rs">Price \u20B9</string>
 
 
 

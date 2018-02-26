@@ -20,13 +20,14 @@
             android:textAllCaps="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:paddingRight="20dp"
-            android:paddingEnd="20dp"
+            android:paddingRight="30dp"
+            android:paddingEnd="30dp"
             android:id="@+id/textQuant"/>
 
         <LinearLayout
             android:layout_width="120dp"
             android:layout_height="50dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:layout_below="@id/textQuant"
             android:id="@+id/pricePick"
@@ -75,18 +76,11 @@
             android:layout_toRightOf="@+id/imgLatte"
             android:text="@string/coffeetype"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@android:color/black"
             android:id="@+id/texLatte"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/texLatte"
-            android:layout_alignStart="@+id/texLatte"
-            android:layout_below="@+id/pricePick"
-            android:text="@string/price"
-            android:id="@+id/price_text_view"/>
+
     </RelativeLayout>
 
     <LinearLayout
@@ -94,13 +88,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/relLay"
         android:layout_margin="15dp"
+        android:padding="10dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pd"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
             android:textSize="15sp"/>
         <CheckBox
             android:layout_width="wrap_content"
@@ -110,6 +104,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/del"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="@string/details"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/desc"
+            android:textSize="15sp"/>
 
     </LinearLayout>
     <RelativeLayout
@@ -117,6 +123,16 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@color/colorGray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/Rs"
+            android:textColor="@android:color/white"
+            android:padding="15dp"
+            android:id="@+id/price_text_view"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

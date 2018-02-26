@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view) {
 
         int price = quantity * 5;
-        String priceMessage = "Price $ " + price;
-        priceMessage = priceMessage + "\n Amazing Choice";
+        String priceMessage = "Price ₹ " + price;
+        //priceMessage = priceMessage + "\n Amazing Choice";
         displayMessage(priceMessage);
         //toast
         Toast toast=Toast.makeText(getApplicationContext(),"Thanks for Ordering Latte",Toast.LENGTH_SHORT);
